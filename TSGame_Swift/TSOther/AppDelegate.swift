@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TSGame_Swift
 //
-//  Created by 王磊 on 16/1/29.
+//  Created by 王磊 on 16/1/27.
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = GameViewController()
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
